@@ -7,7 +7,7 @@ class Cassandra22 < Formula
 
   bottle :unneeded
 
-  depends_on :python if MacOS.version <= :snow_leopard
+  depends_on python if MacOS.version <= :snow_leopard
 
   conflicts_with "cassandra",
     :because => "cassandra22 and cassandra install different versions of the same binaries."

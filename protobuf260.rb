@@ -23,7 +23,7 @@ class Protobuf260 < Formula
   option :cxx11
 
   option "without-python", "Build without python support"
-  depends_on :python => :recommended if MacOS.version <= :snow_leopard
+  depends_on python => :recommended if MacOS.version <= :snow_leopard
 
   conflicts_with "protobuf", :because => "Differing versions of same formula"
 

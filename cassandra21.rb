@@ -10,7 +10,7 @@ class Cassandra21 < Formula
     sha256 "68ac1fdc4fbfb3dae54015e274070b398c0062436edcfd002a216e0ed9812955" => :mavericks
   end
 
-  depends_on :python if MacOS.version <= :snow_leopard
+  depends_on python if MacOS.version <= :snow_leopard
 
   conflicts_with "cassandra", :because => "Differing versions of the same formula"
 

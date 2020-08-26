@@ -19,7 +19,7 @@ class Postgresql94 < Formula
   depends_on "openssl"
   depends_on "readline"
   depends_on "libxml2" if MacOS.version <= :leopard # Leopard libxml is too old
-  depends_on :python => :optional
+  depends_on python => :optional
 
   fails_with :clang do
     build 211

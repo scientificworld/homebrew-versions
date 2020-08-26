@@ -16,7 +16,7 @@ class Protobuf250 < Formula
   # this will double the build time approximately if enabled
   option "with-check", "Run build-time check"
 
-  depends_on :python => :optional
+  depends_on python => :optional
 
   conflicts_with "protobuf", :because => "conflicts with protobuf in main repository."
 
